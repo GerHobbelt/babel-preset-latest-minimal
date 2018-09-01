@@ -11,6 +11,6 @@ var requiredPlugins = require('./lib')
 
 module.exports = {
   plugins: requiredPlugins.map(function (name) {
-    return [require('babel-plugin-' + name), options]
+    return [require('@gerhobbelt/babel-plugin-' + name), options]
   })
 }
